@@ -375,9 +375,11 @@ datadog:
 
   ## The Datadog Agent supports many environment variables.
   ## ref: https://docs.datadoghq.com/agent/docker/?tab=standard#environment-variables
-  env: []
-  #   - name: <ENV_VAR_NAME>
-  #     value: <ENV_VAR_VALUE>
+  env: 
+     - name: DD_ENV
+       value: lt
+     - name: ENVIRONMENT
+       value: lt     
 
   # datadog.confd -- Provide additional check configurations (static and Autodiscovery)
 
